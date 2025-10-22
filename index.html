@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trip Planner - AI Powered</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(120deg, #74ebd5 0%, #ACB6E5 100%);
+            color: #333;
+        }
+        header {
+            background: #23395d;
+            color: #fff;
+            padding: 32px 0 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(35,57,93,.1);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.6em;
+            letter-spacing: 1px;
+        }
+        .ai-section {
+            background: rgba(255,255,255,0.9);
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 28px 32px;
+            border-radius: 18px;
+            box-shadow: 0 6px 22px rgba(35,57,93,0.14);
+        }
+        .ai-section h2 {
+            color: #23395d;
+            font-size: 1.6em;
+            margin-bottom: 18px;
+        }
+        .ai-section ul {
+            padding-left: 24px;
+            line-height: 1.6;
+        }
+        .get-started {
+            text-align: center;
+            margin-top: 38px;
+        }
+        .get-started a {
+            display: inline-block;
+            padding: 12px 32px;
+            background: #23395d;
+            color: #fff;
+            border-radius: 22px;
+            font-size: 1.2em;
+            text-decoration: none;
+            box-shadow: 0 2px 8px rgba(35,57,93,0.09);
+            transition: background 0.2s;
+        }
+        .get-started a:hover {
+            background: #4267b2;
+        }
+        @media (max-width: 600px) {
+            .ai-section {
+                padding: 18px 10px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Trip Planner</h1>
+        <p>Plan your trips smarter & faster with AI</p>
+    </header>
+    <section class="ai-section">
+        <h2>How Can AI Help in Trip Planning?</h2>
+        <ul>
+            <li><strong>Personalized Recommendations:</strong> AI suggests destinations, hotels, and activities based on your preferences and history.</li>
+            <li><strong>Smart Itinerary Builder:</strong> Get optimized travel plans and schedules in seconds using intelligent algorithms.</li>
+            <li><strong>Cost Estimation & Budgeting:</strong> AI helps estimate costs and suggests budget-friendly options.</li>
+            <li><strong>Instant Chatbot Assistance:</strong> Ask questions and get instant answers for your trip planning needs 24/7.</li>
+            <li><strong>Real-Time Updates:</strong> Receive alerts about weather, local events, and safety updates while you travel.</li>
+        </ul>
+    </section>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  chat-icon="https:&#x2F;&#x2F;miro.medium.com&#x2F;v2&#x2F;1*CwhtgBtYuUvcs8P9oaoaPw.jpeg"
+  intent="WELCOME"
+  chat-title="Trip_Planner7"
+  agent-id="bc72741d-1a48-4bf9-9ba2-6ed0e30911d2"
+  language-code="en"
+></df-messenger>
+</body>
+</html>
