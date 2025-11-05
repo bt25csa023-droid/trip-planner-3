@@ -66,6 +66,14 @@
                 font-size: 2em;
             }
         }
+        /* Make the embedded form responsive */
+        .google-form-embed {
+            width: 100%;
+            max-width: 100%;
+            min-width: 320px;
+            border: none;
+            margin-top: 25px;
+        }
     </style>
 </head>
 <body>
@@ -82,14 +90,26 @@
             <li><strong>Instant Chatbot Assistance:</strong> Ask questions and get instant answers for your trip planning needs 24/7.</li>
             <li><strong>Real-Time Updates:</strong> Receive alerts about weather, local events, and safety updates while you travel.</li>
         </ul>
+        <!-- Google Form Embed -->
+        <iframe 
+            class="google-form-embed"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfo-OAiD75aWDKSBTMdO-PDl7y8U2HTDx6CWnHuD6uZtjJoDw/viewform?embedded=true" 
+            width="100%"
+            height="750"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            allowfullscreen>
+            Loading…
+        </iframe>
     </section>
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-<df-messenger
-  chat-icon="https://user-gen-media-assets.s3.amazonaws.com/seedream_images/021ee478-b012-4570-97b0-75d2ac57323d.png"
-  intent="WELCOME"
-  chat-title="Trip_Planner7"
-  agent-id="bc72741d-1a48-4bf9-9ba2-6ed0e30911d2"
-  language-code="en"
-></df-messenger>
+    <df-messenger
+      chat-icon="https://user-gen-media-assets.s3.amazonaws.com/seedream_images/021ee478-b012-4570-97b0-75d2ac57323d.png"
+      intent="WELCOME"
+      chat-title="Trip_Planner7"
+      agent-id="bc72741d-1a48-4bf9-9ba2-6ed0e30911d2"
+      language-code="en"
+    ></df-messenger>
 </body>
 </html>
